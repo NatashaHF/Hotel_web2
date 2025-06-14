@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+
+/* Body Part */
+body{
+
+    background-color: rgb(206,185,174);
+ 
+}
+
+
+h5 {    
+    display: block;
+    font-size: 30px;
+    padding-top: 1em;   
+}
+
+/* Responsive Layout (~700px) */
+@media only screen and (max-width: 600px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10%;
+        padding-left: 10%;
+        overflow-x: hidden;
+    }
+
+    .intro {
+        padding: 0 ;
+    
+    }
+    
+    .info {
+        float: left;
+        width: 100%;
+    }
+
+    .buffet, .lounge , .bar{
+        width: 80%;
+        padding-left: 1em;
+    }
+
+}
+
+
+
+
+
+

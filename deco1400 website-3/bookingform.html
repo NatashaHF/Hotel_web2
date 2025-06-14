@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang = 'en'>
+
+    <head>
+        <meta charset="utf-8">
+        <title>WONDERLAND </title>
+        <link rel="stylesheet" href="css/bookingform.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <nav class="logo">
+                <ul>
+                    <li><a href="profile.html"><img class ="hat" src = "images/magic_hat.png" alt="magical hat"></a></li>
+                </ul>
+            </nav>
+
+        <nav class="menu">
+            <ul>
+                <li><a class="active" href="profile.html"> RESORT </a></li>
+                <li><a href="rooms.html"> ROOMS </a></li>
+                <li><a href="activities.html"> ACTIVITIES </a></li>
+                <li><a href="dining.html">DINING </a></li>
+                <li><a href="offers.html"> OFFERS </a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section id="bookingform">
+        <h2> CONFIRM YOUR STAY </h2>
+
+        <form method="get" action="profile.html">
+            <fieldset>
+                <div class="form-item">
+                    <label for="form-first-name"> First Name: </label><br>
+                    <div class="form-element">
+                        <input type="text" name="fname" id="form-first-name" placeholder="Enter your first name">
+                    </div>
+                </div>
+                
+                <div class="form-item">
+                    <label for="form-last-name"> Last Name: </label>
+                    <div class="form-element">
+                        <input type="text" name="lname" id="form-last-name" placeholder="Enter your last name">
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label>Gender:</label>
+                    <div class="form-element">
+                        <label class="form-male">
+                            <input type="radio" id="form-male" name="gender" value="male"> Male
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="form-female">
+                            <input type="radio" id="form-female" name="gender" value="female"> Female
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>  
+
+                <div class="form-item">
+                    <label for="form-email"> Email Address: </label>
+                    <div class="form-element">
+                        <input type="text" name="email" id="form-email" placeholder="Enter a valid email address">
+                    </div>
+                </div>    
+                
+                <div class="form-item">
+                    <label for="form-phone"> Phone Number: </label>
+                    <div class="form-element">
+                        <input type="text" name="phoneno" id="form-phone" placeholder="Telephone/Mobile Number">
+                    </div>
+                </div>  
+                
+                <div class="form-item">
+                    <label for="form-bod"> Date of Birth: </label>
+                    <div class="form-element">
+                        <input type="date" name="bod" id="form-bod" placeholder="dd/mm/yyyy">
+                    </div>
+                </div>  
+
+                <div class="form-item">
+                    <label for="form-checkin"> Check-In Date: </label>
+                    <div class="form-element">
+                        <input type="date" name="checkin" id="form-checkin" placeholder="dd/mm/yyyy">
+                    </div>
+                </div> 
+
+                <div class="form-item">
+                    <label for="form-checkout"> Check-In Date: </label>
+                    <div class="form-element">
+                        <input type="date" name="checkout" id="form-checkout" placeholder="dd/mm/yyyy">
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label for="form-no-adults"> Number of Adults:</label>
+                    <div class="form-element">
+                        <select name="adults" id="form-no-adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label for="form-no-children"> Number of Children:</label>
+                    <div class="form-element">
+                        <select name="children" id="form-no-children">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-item">
+                    <label for="form-extra"> Any extra requirements: </label>
+                    <div class="form-element">
+                        <textarea name="extra" id="form-extra" placeholder="Write something..." style="height: 200px"></textarea>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <button type="submit" id="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+    </body>
+
+    <footer>
+        <ul>
+            <li><img class ="footerhat" src = "images/magic_hat.png" alt="magical hat"></li>
+            <div class="footerBanner">
+            <li><h3> The Wonderland Resort </h3></li>
+            <h4>More</h4>
+            <h5> <a href="contactus.html">Contact Us </a></h5>
+            <h5> <a href="services.html">Services </a></h5>
+            </div>
+        </ul>
+
+         <section class="socialmedia">
+             <li><img class = 'fb' src = "images/fb.png" alt="fb"></li>
+             <li><img class = "ins"src = "images/ins.png" alt="ins"></li>
+             <li><img class = "twitter" src = "images/twitter.png" alt="twitter"></li>
+         </section>
+
+         <div class = "copyright">
+            <li><p>Wonderland Resort Copyright@2021</p></li>
+            <li><a href="reference.html">Reference >></a></li>
+        </div>
+
+    </footer>
+

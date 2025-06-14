@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+
+/* Body Part */
+body{
+
+    background-color: rgb(206,185,174);
+    overflow-x: hidden;
+ 
+}
+
+h6{
+    display: block;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+   
+}
+
+h5 {
+    
+    display: block;
+    font-size: 30px;
+    padding-top: 1em;
+     
+}
+
+.contacts p, .email p, .phone p{
+    display: inline;
+    position: relative;
+    bottom: 10%;
+    left: 2%;
+}
+
+.feedback p {
+    display: inline;
+    position: relative;
+    bottom: 0.6em;
+    padding-left: 1em;
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+
+
+.form-item{
+    display: flexbox; 
+    position: relative;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    margin-left: 3em;
+
+}
+
+#form-extra{
+    width: 40%;
+    height: 200px;
+}
+
+/* Responsive Layout (~700px) */
+@media only screen and (max-width: 700px) {
+    #GoogleMap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        padding-left: 0;
+    }
+
+    #form-extra{
+        width: 80%;
+        height: 200px
+    }
+
+}

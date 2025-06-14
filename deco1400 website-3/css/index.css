@@ -1,0 +1,289 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+/* Body Part */
+body{
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+    background-position: 50%;
+    background-size: cover;
+    height: 600px;
+    overflow-x: hidden;
+}
+
+.welcome_wrapper {
+    color: black;
+    text-align: center;
+
+}
+
+.welcome_wrapper h3 {
+    font-size: 50px;
+    font-style: oblique;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-left: 1.5em;
+}
+
+.welcome_wrapper p{
+    padding-top: 0.2cm;
+    line-height: 1cm;
+}
+
+.welcome_wrapper h5{
+    font-size: 20px;
+    padding-top: 3em;
+}
+
+.bannerWrapper {
+
+    background-image: url(images/desertfinal.png);
+    filter: grayscale(40%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 500px;
+    width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 0;
+    
+}
+
+.bannerWrapper h3{
+    text-decoration: none;
+    position: relative;
+    font-size: 35px;
+    text-align: center;    
+    
+}
+
+.bannerWrapper h4{
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 27%;
+}
+
+
+.content {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 2em;
+}
+
+.description {
+    margin: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+/* Slideshow Part */
+.slideshow-container{
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.photoSlides{
+    display: none;
+    position: relative;
+    left: 13.5%;
+    padding-top: 2em;
+    width: 90%;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    width: 100%;
+    bottom: 50%;
+    margin-top: -3%;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    transition : 0.1s ease;
+    border-radius: 0 10px 10px 0;
+    user-select: none;
+}
+
+.next{
+    margin-left: 88%;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev{
+    margin-left: 10%;
+    border-radius: 0 3px 3px 0;
+}
+
+.dotContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em; 
+    margin-top: 1em;
+    text-align: center;
+    position: relative;
+    left: 45%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 1.5%;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; 
+    text-align: center;
+
+  }
+  
+.slideshow-container .active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.details h3{
+    font-size: 20px;
+    position: relative;
+    padding-left: 26%;
+    padding-bottom: 1em;
+}
+
+.details p {
+    font-size: 20px;
+    position: relative;
+    padding-left: 8%;
+    padding-bottom: 2em;
+    text-decoration: underline;
+}
+
+.details a{
+    position: relative;
+    padding-left: 19.5%;
+    color: black;
+
+}
+
+.details a.active:hover{
+    color: rgb(30, 30, 87);
+}
+
+.details a.active:link,.details a.active:visited{
+    color: rgb(83, 36, 36);
+}
+
+
+/* Responsive Layout (~700px) */
+@media only screen and (max-width: 700px) {
+
+    .bannerWrapper h3{
+        text-decoration: none;
+        position: relative;
+        font-size: 35px;
+        text-align: center;   
+        top: 6em;
+        
+    }
+    
+    .bannerWrapper h4{
+        text-decoration: none;
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        top: 10em;
+    }
+
+    .welcome_wrapper h3{
+        font-size: 20px;
+    }
+    
+    .welcome_wrapper p{
+        text-align: left;
+        padding-left: 2em;
+        padding-right: 2em;
+
+    }
+
+    .photoSlides{
+        display: none;
+        position: relative;
+        left: 12%;
+        padding-top: 2em;
+        width: 65%;
+        padding-left: 5em;
+    }
+
+    .next{
+        margin-left: 77%;
+        border-radius: 0 3px 3px 0;
+    }
+    
+    .prev{
+        margin-left: 92em;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .dotContainer {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2em; 
+        margin-top: 1em;
+        text-align: center;
+        position: relative;
+        left: 45%;
+    }
+
+    .details h3{
+        font-size: 15px;
+        position: relative;
+        padding-left: 22%;
+        padding-bottom: 1em;
+    }
+
+    .details p {
+        font-size: 13px;
+        position: relative;
+        padding-left: 1em;
+        padding-bottom: 2em;
+        text-decoration: underline;
+    }
+
+}
+
+

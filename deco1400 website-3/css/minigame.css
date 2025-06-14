@@ -1,0 +1,487 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+/* Menu Bar */
+
+
+header{
+    background-color: rgba(147,142,148,255);
+    margin: 0;
+    height: 5em;
+
+}
+
+h1 a {
+    display: inline-flex;
+    position: relative;
+    margin: 10px ;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    font-size: 30px;
+
+}
+
+.hat{
+    display: inline-flex;
+    width: 55px;
+    height:55px;
+    position: relative;
+
+    margin-top: 0.5em; 
+    margin-left: 1em;
+}
+
+ul li{
+    display: inline;
+    margin-top: 2em;
+}
+
+.menu a {
+    margin:  3em;
+    position: relative;
+    display: inline-flex;
+    margin-top: -10cm;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    left: 10%;
+}
+
+
+.menu a.active{
+    text-decoration: underline;
+}
+
+.menu a.active:hover{
+    color: white;
+}
+
+.menu a.active:link,.menu a.active:visited{
+    color: whitesmoke;
+}
+
+
+.menu ul{
+    position: relative;
+    margin-top: -0.75cm ;
+    right: 0.1cm;
+}
+
+.drop-down{
+    display: none;
+}
+
+.dropdownmenu{
+    display: none;
+}
+
+
+/* Body Part */
+* {
+	box-sizing: border-box; /* Turns off padding adding to width/height */
+}
+
+body{
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+h2{
+    padding-bottom: 1em;;
+}
+
+#details-form, #simple-guessing-game{
+	background: #eee;
+	padding: 1em 2em;
+	border-radius: 10px;
+	margin-top: 1em;
+}
+
+/* Form */
+
+fieldset {
+    margin-bottom: 2em;
+    padding: 1em 2em;
+    border: 0;
+    border-radius: 10px;
+    background: white;
+    display: block;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0.5em 1em;
+    margin: 0 -1em;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    background: linear-gradient(141deg, #5c6161 0%, #757a7a 51%, #c6c9ca 75%);
+}
+
+fieldset .form-item {
+    display: flex;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+fieldset .form-item > label {
+    font-weight: bold;
+    width: 25%;
+    padding-right: 2em;
+    text-align: right;
+    text-shadow: rgba(0,0,0,0.3) 3px 3px 5px;
+}
+fieldset .form-item .form-element {
+    width: 75%;
+}
+
+fieldset .form-item .form-element > label {
+	display: block;
+}
+
+input[type=text], input[type=number], textarea {
+    box-shadow: rgba(0,0,0,0.15) 3px 3px 5px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    border-color: #505455;
+}
+
+input[type=radio], input[type=checkbox] {
+    margin-right: 1em;
+}
+
+label.error {
+	color: red;
+}
+
+input[type=text].error, input[type=number].error {
+	border-color: red;
+}
+
+select {
+    font-size: 1em;
+}
+
+button {
+    font-weight: bold;
+    font-size: 1.3em;
+    background: black;
+    padding: 0.5em 1em;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(-90deg, rgb(102, 100, 100), rgb(117, 117, 116));
+    cursor: pointer;
+    float: right;
+}
+
+button[disabled] {
+	background: #ddd;
+	color: #999;
+	cursor: default;
+}
+
+.name {
+	font-weight: bold;
+	color: red;
+}
+
+#minigame fieldset .form-item > label,
+#simple-guessing-game fieldset .form-item .form-element {
+	width: 50%;
+}
+
+#simple-guessing-game .computer-guess {
+	font-weight: bold;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+#music {
+	padding: 1.5em;
+	overflow: hidden;
+}
+
+/* MUSIC */
+
+#music {
+	background-color: #ddd;
+    padding-bottom: 1em;
+}
+
+#music .player-controls {
+	display: none;
+}
+
+body.js #music .player-controls {
+	display: block;
+	float: left;
+	margin-right: 3em;
+}
+
+body.js #music .player-controls a {
+	display: block;
+	background-color: white;
+	width: 80px;
+	height: 80px;
+	line-height: 80px; 
+	border-radius: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 1em;
+	border: 2px solid #999;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+body.js #music .player-controls a:last-child {
+	display: none;
+	background-color: #999;
+	animation-name: pulse;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+body.js #music .player-controls a:hover {
+	background-color: transparent;
+}
+
+body.js #music .player-controls.playing a:first-child {
+	display: none;
+}
+
+body.js #music .player-controls.playing a:last-child {
+	display: block;
+}
+
+/* Footer */ 
+footer{
+    position: relative;
+    background-color: rgba(93,92,97,255);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45vh;
+    color: azure;
+    padding-top: 1em;
+    font-family:fantasy;
+
+}
+
+.footerhat{
+    position: relative;
+    margin-left: 48%;
+    width: 2cm;
+    height: 2cm;
+}
+
+.footerBanner h3 {
+    font-size: 35px; 
+    position: relative;
+    margin-left: 38%;
+    padding-top: 0.25em;
+
+}
+
+.footerBanner h4{
+    color: black;
+    font-size: 20px;
+    position: relative;
+    padding-left: 49%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footerBanner h5{
+    font-size: 20px;
+    position: relative;
+    padding-right: 30%;
+    padding-top: 1em;
+    line-height: 0.3cm;
+    text-align: center;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.footerBanner a{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    padding-left: 67%;
+    text-align: center;
+    color: black;
+
+}
+
+.footerBanner a.active{
+    text-decoration: underline;
+}
+
+.footerBanner a.active:hover{
+    color: white;
+}
+
+.footerBanner a.active:link,.footerBanner a.active:visited{
+    color: rgb(71, 5, 5);
+}
+
+
+@media only screen and (max-width: 700px) {
+    header{
+        width: 15cm;
+    }
+
+    h1{
+        width: 3cm;
+        font-size: 25px;
+    }
+
+    .hat{
+        height: 40px;
+        width: 40px;
+        position: relative;
+        left: 1.7cm;
+
+    }
+    .menu{
+        height: 100%;
+    }
+
+    ul li {
+        width : 5px;
+     }
+    
+     .sign-in, h2 ,.menu{
+         display: none;
+     }
+    
+     .container{
+         height : 20cm;
+         width: 15cm;
+     }
+
+     span{
+         bottom: 1em;
+      
+     }
+
+     footer{
+         width: 14cm;
+         height: 7cm;
+     }
+
+     .fb {
+        width: 30px ;
+        height: 32px;
+        float: left;
+        padding-left: 3em;
+        padding-right: 2em;
+        padding-top: 5em;
+        position: relative;
+        bottom: 0.2px;
+       
+    
+    }
+    
+    .ins {
+        width: 35px ;
+        height: 35px;
+        float: left;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top:5em;
+        position: relative;
+        bottom: 0.2px;
+    }
+    
+    .twitter {
+        width: 45px ;
+        height: 45px;
+        float: left;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 5em;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .drop-down{
+        /* change to position fixed instead of flexbox*/
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        position: relative;
+        float: right;
+        padding-left: 10em;
+        top : 1em;
+        
+        
+    }
+
+    .dropdownmenu{
+        position: relative;
+        display: inline-block;
+
+       
+    }
+
+    .dropdowncontent{ 
+        /*make the whole thing into flexbox instead and push it up*/
+        display: none;
+        position: fixed;
+        background-color:  rgb(166, 197, 224);
+        min-width: 160px;
+        z-index: 1; 
+        margin-top: -10%;
+
+        
+    }
+
+    .dropdowncontent a{
+        color: black;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: block;
+        font-size: 26px;
+    }
+
+    .dropdowncontent a:hover{
+        background-color: whitesmoke;
+    }
+    
+    .dropdownmenu:hover .dropdowncontent{
+        display: block;
+    }
+
+    .dropdownmenu:hover .drop-down{
+        background-color: cadetblue;
+    }
+
+
+}
+
+

@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+/* Body Part */
+body{
+
+    background-color: rgb(206,185,174);
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.intro {
+    padding:0 100px; 
+    float: right;
+    width: 60%;
+    
+}
+
+h5 {
+    
+    display: block;
+    font-size: 40px;
+    padding-top: 1em;
+      
+}
+
+@media only screen and (max-width: 700px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    .intro {
+        padding-left: 8em;
+        
+    }
+    
+    h5 {
+        
+        display: block;
+        font-size: 40px;
+        padding-top: 1em;
+          
+    }
+    
+    .book{
+        padding-left: 5em;
+    }
+
+    .cloudhop, .skydive, .sandsled{
+        width: 90%;
+        padding-left: 1em;
+    }
+
+
+
+
+}

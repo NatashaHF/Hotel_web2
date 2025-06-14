@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang = 'en'>
+
+    <head>
+        <meta charset="utf-8">
+        <title>WONDERLAND </title>
+        <link rel="stylesheet" href="css/minigame.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <nav class="logo">
+                <ul>
+                    <li><a href="index.html"><img class ="hat" src = "images/magic_hat.png" alt="magical hat"></a></li>
+
+                    <li>
+                        <div class="dropdownmenu">
+                            <img class = "drop-down" src ="images/hamburger.png" alt="hamburger">
+                            <div class="dropdowncontent">
+                                <a href="index.html">RESORT</a>
+                                <a href="rooms.html"> ROOMS </a>
+                                <a href="activities.html"> ACTIVITIES </a>
+                                <a href="dining.html">DINING </a>
+                                <a href="offers.html"> OFFERS </a>
+                                <a href="contactus.html">CONTACT US</a>
+                                <a href="services.html">SERVICES</a>
+                                <a href="minigame.html">GUESS AND WIN</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        
+ 
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"> RESORT </a></li>
+                    <li><a href="rooms.html"> ROOMS </a></li>
+                    <li><a href="activities.html"> ACTIVITIES </a></li>
+                    <li><a href="dining.html">DINING </a></li>
+                    <li><a href="offers.html"> OFFERS </a></li>
+                    <li><a class="active" href="minigame.html" id="guess">GUESS & WIN</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="details-form">
+
+			<h2>Fill in your details</h2>
+
+			<form method="get" action="minigame.html">
+
+			    <fieldset>
+
+			        <legend>
+			            Your Details
+			        </legend>
+
+			        <div class="form-item">
+				        <label for="form-first-name">First Name*:</label>
+				        <div class="form-element">
+				        	<input type="text" name="firstName" id="form-first-name" placeholder="First name only" />
+				        </div>
+			        </div>
+
+			        <div class="form-item">
+				        <label for="form-last-name">Last Name*:</label>
+				        <div class="form-element">
+				        	<input type="text" name="lastName" id="form-last-name" placeholder="Last name only" />
+				        </div>
+			        </div>
+
+			        <div class="form-item">
+			            <label>Age Group:</label>
+			            <div class="form-element">
+				            <input type="text" name="age" id="form-age" placeholder="In numeric only">
+			            </div>
+			        </div>
+
+			    </fieldset>
+
+			    <fieldset>
+			        <button type="submit">Submit</button>
+			    </fieldset>
+
+			</form>
+
+		</section>
+
+		<section id="simple-guessing-game">
+
+			<h2>Mini Game</h2>
+
+			<form method="get" action="minigame.html">
+
+				<fieldset>
+
+                    <p>Guess a number which match with the system !</p>
+					
+					<legend>Round #1</legend>
+
+					<div class="form-item">
+				        <label for="form-number">
+							Guess a number 
+						</label>
+				        <div class="form-element">
+				        	<input type="number" name="number" id="form-number" placeholder="Guess a number" />
+				        </div>
+			        </div>
+
+			        <p class="computer-guess"></p>
+
+				</fieldset>
+
+				<fieldset>
+			        <button type="submit">Submit Guess</button>
+			    </fieldset>
+
+			</form>
+        </section>
+
+        <section id="music">
+
+			<nav class="player-controls">
+				<a href="images/audio/bensound-onceagain.mp3">Play</a>
+				<a href="images/audio/bensound-onceagain.mp3">Pause</a>
+			</nav>
+
+			<audio controls>
+				<source src="images/audio/bensound-onceagain.mp3" type="audio/mpeg">
+			</audio>
+
+		</section>
+
+        <script src="js/minigame.js"> </script>
+
+
+
+    </body>
+        
+
+    <footer>
+        <ul>
+            <li><a href="index.html"><img class ="footerhat" src = "images/magic_hat.png" alt="magical hat"></a></li>
+            <div class="footerBanner">
+            <li><h3> The Wonderland Resort </h3></li>
+            <h4>More</h4>
+            <h5> <a href="contactus.html">Contact Us </a></h5>
+            <h5> <a href="services.html">Services </a></h5>
+            </div>
+        </ul>
+
+    </footer>
+
+</html>

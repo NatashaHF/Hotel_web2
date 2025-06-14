@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+
+/* Body Part */
+
+.container{
+    display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+
+.intro1, .intro2, .intro3, .intro4 {
+    padding:0 100px;
+    float: right;
+    width: 60%;
+    
+}
+
+h5 {
+    
+    display: block;
+    font-size: 40px;
+    padding-top: 1em;
+   
+    
+}
+
+p{
+    display: block;
+    padding-top: 2em;
+}
+
+.info {
+    width: 50%;
+    float: left;
+   
+}
+
+
+
+p1{
+    font-size: 30px;
+    display: block;
+    padding-left: 60px;
+    
+ 
+}
+
+button{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 7em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;  
+}
+
+/* Responsive Layout (~700px)*/
+@media only screen and (max-width: 700px) {
+
+    
+    .family{
+        position: relative;
+        padding-bottom: 2em;
+        height: 30%;
+        width: 80%;
+        padding-left: 4em;
+        bottom: 3em;
+    }
+
+    .container{       
+        display: flex;
+        flex-direction: column;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .intro1 {
+        padding: 0;
+        display: flex;
+        position: relative;
+        left: 30%;
+        bottom: 13%;
+        width: 100%;
+    
+    }
+    
+    .info {
+        float: left;
+
+    }
+
+    h5{
+        display: flex;
+        position: relative;
+
+    }
+
+    .price{
+        padding: 0;
+        position: relative;
+        right: 66%;
+        bottom: -110%;
+    }
+
+    p1{
+        font-size: 23px;
+    }
+    
+    .standardroom{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    .standard{
+        position: relative;
+        padding-bottom: 2em;
+        padding-top: 0;
+        padding-left: 4em;
+        height: 30%;
+        width: 80%;
+        bottom: 30%;
+    }
+
+    .intro2 {
+        padding: 0;
+        display: flex;
+        position: relative;
+        left: 25%;
+        bottom: 35%;
+        width: 100%;
+    
+    }
+    
+    .grandsuite{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    .grand{
+        position: relative;
+        padding-bottom: 2em;
+        padding-top: 2em;
+        padding-left: 4em;
+        height: 30%;
+        width: 80%;
+        bottom: 60%;
+    }
+
+    .intro3 {
+        padding: 0;
+        display: flex;
+        position: relative;
+        left: 30%;
+        bottom: 65%;
+        width: 100%;
+    
+    }
+    
+    .juniorsuite{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    .junior{
+        position: relative;
+        padding-bottom: 2em;
+        padding-top: 2em;
+        height: 35%;
+        width: 80%;
+        padding-left: 4em;
+        bottom: 85%;
+    }
+
+
+    .intro4 {
+        padding: 0;
+        display: flex;
+        position: relative;
+        left: 30%;
+        bottom: 87%;
+        width: 100%;
+    
+    }
+}

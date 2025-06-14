@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+    padding: 0;
+    
+
+
+}
+
+/* Body Part */
+
+body{
+    overflow-x: hidden;
+}
+
+
+h2{
+    position: relative;
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+}
+
+fieldset{
+    margin-bottom: 2em;
+    padding: 2em 4em;
+    border: 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset .form-item {
+    display: flex;
+    padding: 2em 4em;
+   
+}
+
+label {
+    display: flex;
+    position: relative;
+    font: 22px;
+    padding-right: 3em;
+    margin-right: 2em;
+
+}
+
+input[type=text], select , textarea{
+    width: 100%; 
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 10px; 
+    margin-bottom: 16px; 
+    margin-left: 2em;
+    resize: horizontal
+}
+
+.form-female, .form-male {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 1em;
+    margin-left: 50%;
+    margin-right: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-female input, .form-male input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  /* On mouse-over, add a grey background color */
+.form-female:hover input ~ .checkmark, .form-male:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .form-female input:checked ~ .checkmark , .form-male input:checked ~ .checkmark{
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .form-female input:checked ~ .checkmark:after, .form-male input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .form-female .checkmark:after, .form-male .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+/* Style the submit button with a specific background color etc */
+#submit{
+    background-color: black;
+    color: white;
+    padding: 1em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 2em;
+  }
+  
+/* When moving the mouse over the submit button, add a darker green color */
+#submit:hover {
+    background-color: gray;
+}
+  
+  /* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

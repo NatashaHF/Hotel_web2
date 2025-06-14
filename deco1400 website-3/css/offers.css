@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+
+/* Body Part */
+body{
+    background-color: rgb(206,185,174);
+}
+
+h5 {
+    
+    display: block;
+    font-size: 30px;
+    padding-top: 1em;
+   
+    
+}
+
+
+/* Responsive Layout (~700px) */
+@media only screen and (max-width: 700px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10%;
+        padding-left: 10%;
+        overflow-x: hidden;
+    }
+
+    .intro {
+        padding: 0 ;
+        padding-left: 2.5em;
+    
+    }
+    
+    .info {
+        float: left;
+        width: 100%;
+    }
+
+    .earlybird, .bookmore, .members{
+        width: 85%;
+        padding-left: 2em;
+    }
+
+}
+
+
+
+
+
